@@ -1,0 +1,188 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    padding-top:100px;
+    background-color: #002366;
+    background: url(../img/dark.jpg) repeat center center;
+     background-blend-mode: lighten;
+  background-attachment:fixed;
+    
+}
+body:hover{
+  animation: examples 20s linear infinite;  
+  
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+#content{
+    min-height: 600px;
+}
+
+#banner_image {
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background-size:contain;
+}
+
+#banner_content {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.0175);
+    max-width: 660px;
+}
+
+#item_list {
+    padding-top: 50px;
+}
+
+/*This code ensures that when we navigate to a particular section of a page, the section does not get lost behind the header*/
+#Virtual-Internship:before, #Freshers-Jobs:before, #Online-trainings:before{
+    display: block; 
+    content: " "; 
+    margin-top: -85px; 
+    height: 85px; 
+    visibility: hidden;
+}
+
+
+#login-panel .panel-footer{
+    font-weight:normal;
+}
+
+footer {
+    padding: 10px 0;
+    background-color: #101000;
+    color:#9d9d9d;
+    bottom: 0;
+    width: 100%;
+}
+
+fieldset{
+	text-align: center;
+	width: 50%;
+	margin: 50px auto;
+}
+
+.red{
+    color:red;
+}
+
+#settings-container{
+    margin-bottom:10px;
+}
+
+.navbar-brand{
+    font-size:20px;
+}
+
+@media(max-width:768px) {
+    #banner_content {
+        padding-bottom: 15%;
+    }
+    footer{
+        text-align:left;
+    }
+}
+
+.remove_item_link{
+    color:#0000ff;
+}
+
+p.solid{
+    border-style: solid;
+    border-color: red;
+    padding: 10px;
+}
+
+img{
+    width: 750px;
+    height:500px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    
+}
+
+ .glow {
+    font-size:50px;
+    color: #fff;
+    font-family: monospace ;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+to {
+  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6; 
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {background-image:url('img/dark.jpg');}
+.glow{font-size:50px;}
+ div.lll{
+    display:none;
+  }
+div.lol{ display:none;}}  
+
+.lol {
+  width: 200px;
+  font-size:20px;
+  color:white;
+  height:100px;
+  transition: width 2s;
+}
+
+#lol{ 
+  width: 1000px;
+  box-shadow: 0px 8px 16px 0px rgba(70,5,8,0.5);
+  font-size:25px;
+  color: lightgreen;
+  animation-name: example;
+  animation-duration: 15s;
+}
+
+body:hover .lol{
+  width: 1000px;
+  box-shadow: 0px 8px 16px 0px rgba(70,5,8,0.5);
+  font-size:25px;
+  animation-name: example;
+  animation-duration: 15s;
+ 
+}
+
+ .home-feature{
+	margin: 70px auto 0;
+	overflow: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	}
+/*	
+	.home-feature .thumbnail img{
+		position: relative;
+		overflow: hidden;
+	}
+        */
+	.home-feature .thumbnail  {
+		max-width: 100%;
+		transition: transform 2s;
+	}
+	.home-feature .thumbnail:hover {
+		transform: scale(1.025);
+	}
